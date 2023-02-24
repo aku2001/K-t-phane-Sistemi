@@ -11,8 +11,8 @@ Tanım:
 	Kayıt kısmında öğrenciler kayıt yaptırabilir. Öğrenci numarası ve kullanıcı adları farklı olmak zorundadır.
 
 
-Kullanım Video Linki:
-https://drive.google.com/file/d/1MxPPOZium10kN4ZWJsVFu3r-wEcG452m/view?usp=sharing
+Kütüphane Sisteminin Kullanımının Video Linki:
+https://drive.google.com/file/d/1TxSym3uCoJ6edbQs_m0hMDgFhZbN-Jqy/view?usp=sharing
 
 Veri Tabanı Konfigürasyonu:
 	
@@ -46,7 +46,51 @@ UYARI:
 
 
 
+// ENGLISH 
 
 
+Definition:
 
+It is a simple but functional library system. In this system, an admin is created at first and transactions about the books are carried out through the admin.
+
+In the first login section, there are membership login, registration and admin login sections. Registered students can log in from the member login.
+They can reserve a book from the member page and update their user information.
+
+Only admins can enter from the admin login. You can edit the library's budget transactions here. Book rental/return, adding/updating/deleting books to students
+is also resolved here.
+
+Students can register in the registration section. Student number and username must be different.
+
+
+Library System Usage Video Link:
+https://drive.google.com/file/d/1TxSym3uCoJ6edbQs_m0hMDgFhZbN-Jqy/view?usp=sharing
+
+Database Configuration:
+
+It is developed by using mysql workbench. It can be used in the same way for experimentation.
+First create a local database and assign a password to it. Username is usually root.
+You can connect to your local database with the url jdbc:mysql://localhost:3306/.
+Create a schema in the local database you created.
+
+In the code, there are dbUrl, dbName, dbUserName and dbPassw in Driver.java, change these parts to suit you.
+dbUrl is the url of your local database
+dbName is the name of the schema you created
+Username and password required to connect to your local database in dbUsername and dbPassw.
+  
+After that, when you run the code, the missing tables are going to be detected and they will be created automatically.
+
+Libraries Used:
+java.sql -> mysql-connector-java-9.0.29.jar
+Java Swing
+Java Awt
+Java util
+
+Compiling and Running:
+Compiled and tested with open-jdk 15.
+Eclipse development environment was used.
+The main file is src/LibrarySystemGUI.java .
+
+WARNING:
+Since there are Turkish characters, it cannot be compiled directly with javac, its encoding must be utf-8.
+It can be compiled directly using the Eclipse application.
 
